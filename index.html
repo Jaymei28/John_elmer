@@ -1,0 +1,430 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+  <meta charset="UTF-8" />
+  <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+  <title>John Elmer Valenzuela</title>
+  <meta name="description"
+    content="Award-winning video editor and filmmaker specializing in cinematic storytelling, music videos, commercials, and branded content." />
+  <link rel="stylesheet" href="style.css" />
+  <link rel="icon"
+    href="data:image/svg+xml,<svg xmlns='http://www.w3.org/2000/svg' viewBox='0 0 32 32'><rect width='32' height='32' fill='%23FFC107'/><text x='3' y='24' font-size='20' font-weight='bold' fill='%230A0A0A'>JE</text></svg>" />
+</head>
+
+<body>
+
+  <!-- Film Grain Overlay -->
+  <div class="grain-overlay" aria-hidden="true"></div>
+
+  <!-- Cursor Glow -->
+  <div class="cursor-glow" id="cursorGlow" aria-hidden="true"></div>
+
+  <!-- ======== NAVIGATION ======== -->
+  <nav class="nav" id="navbar">
+    <div class="container">
+      <a href="#" class="nav-logo" id="nav-logo">John Elmer</a>
+      <div class="nav-links" id="navLinks">
+        <a href="#about">About</a>
+        <a href="#works">Works</a>
+        <a href="#services">Services</a>
+        <a href="#reel">Reel</a>
+        <a href="#contact" class="nav-cta">Get in Touch</a>
+      </div>
+      <button class="nav-toggle" id="navToggle" aria-label="Toggle navigation menu">
+        <span></span>
+        <span></span>
+        <span></span>
+      </button>
+    </div>
+  </nav>
+
+  <!-- ======== HERO ======== -->
+  <section class="hero" id="hero">
+    <div class="hero-bg" aria-hidden="true">
+      <!-- Film strip decorations -->
+      <div class="hero-filmstrip hero-filmstrip--left">
+        <div class="sprocket"></div>
+        <div class="sprocket"></div>
+        <div class="sprocket"></div>
+        <div class="sprocket"></div>
+        <div class="sprocket"></div>
+        <div class="sprocket"></div>
+        <div class="sprocket"></div>
+        <div class="sprocket"></div>
+        <div class="sprocket"></div>
+        <div class="sprocket"></div>
+        <div class="sprocket"></div>
+        <div class="sprocket"></div>
+        <div class="sprocket"></div>
+        <div class="sprocket"></div>
+        <div class="sprocket"></div>
+        <div class="sprocket"></div>
+        <div class="sprocket"></div>
+        <div class="sprocket"></div>
+        <div class="sprocket"></div>
+        <div class="sprocket"></div>
+        <div class="sprocket"></div>
+        <div class="sprocket"></div>
+        <div class="sprocket"></div>
+        <div class="sprocket"></div>
+      </div>
+      <div class="hero-filmstrip hero-filmstrip--right">
+        <div class="sprocket"></div>
+        <div class="sprocket"></div>
+        <div class="sprocket"></div>
+        <div class="sprocket"></div>
+        <div class="sprocket"></div>
+        <div class="sprocket"></div>
+        <div class="sprocket"></div>
+        <div class="sprocket"></div>
+        <div class="sprocket"></div>
+        <div class="sprocket"></div>
+        <div class="sprocket"></div>
+        <div class="sprocket"></div>
+        <div class="sprocket"></div>
+        <div class="sprocket"></div>
+        <div class="sprocket"></div>
+        <div class="sprocket"></div>
+        <div class="sprocket"></div>
+        <div class="sprocket"></div>
+        <div class="sprocket"></div>
+        <div class="sprocket"></div>
+        <div class="sprocket"></div>
+        <div class="sprocket"></div>
+        <div class="sprocket"></div>
+        <div class="sprocket"></div>
+      </div>
+    </div>
+
+    <div class="hero-content">
+      <div class="hero-tag">
+        <span class="dot"></span>
+        Available for Projects 2026
+      </div>
+      <h1 class="hero-title">
+        JOHN<br /><span class="accent">ELMER</span>
+      </h1>
+      <p class="hero-subtitle">Video Editor</p>
+      <div class="hero-cta-group">
+        <a href="#reel" class="btn btn-primary" id="btn-play-reel">
+          <span class="play-icon"></span>
+          Play Reel
+        </a>
+        <a href="#works" class="btn btn-outline" id="btn-view-works">View Works</a>
+      </div>
+    </div>
+
+    <div class="hero-scroll" aria-hidden="true">
+      <span>Scroll</span>
+      <div class="scroll-line"></div>
+    </div>
+  </section>
+
+  <!-- ======== MARQUEE ======== -->
+  <div class="marquee" aria-hidden="true">
+    <div class="marquee-inner" id="marqueeInner">
+      <span>Editing<span class="sep">✦</span></span>
+      <span>Color Grading<span class="sep">✦</span></span>
+      <span>Motion Graphics<span class="sep">✦</span></span>
+      <span>Sound Design<span class="sep">✦</span></span>
+      <span>Cinematography<span class="sep">✦</span></span>
+      <span>Storytelling<span class="sep">✦</span></span>
+      <span>Post-Production<span class="sep">✦</span></span>
+      <span>Visual Effects<span class="sep">✦</span></span>
+      <!-- Duplicated for seamless loop -->
+      <span>Editing<span class="sep">✦</span></span>
+      <span>Color Grading<span class="sep">✦</span></span>
+      <span>Motion Graphics<span class="sep">✦</span></span>
+      <span>Sound Design<span class="sep">✦</span></span>
+      <span>Cinematography<span class="sep">✦</span></span>
+      <span>Storytelling<span class="sep">✦</span></span>
+      <span>Post-Production<span class="sep">✦</span></span>
+      <span>Visual Effects<span class="sep">✦</span></span>
+    </div>
+  </div>
+
+  <!-- ======== ABOUT ======== -->
+  <section class="about" id="about">
+    <div class="container">
+      <div class="about-grid">
+        <div class="about-info">
+          <div class="about-label reveal-left">About Me</div>
+          <h2 class="about-heading reveal-left">Crafting visual<br />stories that<br /><span
+              style="color: var(--kodak-yellow);">resonate</span></h2>
+          <p class="about-text reveal">
+            I'm a video editor based in Philippines with over 3 years of experience
+            shaping raw footage into compelling narratives. From high-energy music videos to intimate
+            documentaries, I bring a cinematic eye and meticulous attention to every frame.
+          </p>
+          <p class="about-text reveal">
+            My approach combines technical precision with creative instinct blending rhythm,
+            color, and sound to craft experiences that captivate audiences and elevate brands.
+          </p>
+          <div class="about-stats stagger-children">
+            <div class="stat reveal">
+              <div class="stat-number">150+</div>
+              <div class="stat-label">Projects</div>
+            </div>
+            <div class="stat reveal">
+              <div class="stat-number">3+</div>
+              <div class="stat-label">Years Exp.</div>
+            </div>
+            <div class="stat reveal">
+              <div class="stat-number">40+</div>
+              <div class="stat-label">Clients</div>
+            </div>
+          </div>
+        </div>
+        <div class="about-visual reveal-right">
+          <div class="about-image-wrapper">
+            <img src="images/project-3.png" alt="John Elmer — filmmaker portrait" loading="lazy" />
+          </div>
+        </div>
+      </div>
+    </div>
+  </section>
+
+  <!-- Film Strip Divider -->
+  <div class="container">
+    <div class="film-divider" aria-hidden="true">
+      <div class="hole"></div>
+      <div class="hole"></div>
+      <div class="hole"></div>
+      <div class="strip"></div>
+      <div class="hole"></div>
+      <div class="hole"></div>
+      <div class="hole"></div>
+      <div class="strip"></div>
+      <div class="hole"></div>
+      <div class="hole"></div>
+      <div class="hole"></div>
+      <div class="strip"></div>
+      <div class="hole"></div>
+      <div class="hole"></div>
+      <div class="hole"></div>
+      <div class="strip"></div>
+      <div class="hole"></div>
+      <div class="hole"></div>
+      <div class="hole"></div>
+    </div>
+  </div>
+
+  <!-- ======== FEATURED WORKS ======== -->
+  <section class="works" id="works">
+    <div class="container">
+      <div class="section-header">
+        <div>
+          <div class="section-label reveal-left">Portfolio</div>
+          <h2 class="section-title reveal-left">Featured<br />Works</h2>
+        </div>
+        <p class="section-subtitle reveal-right">
+          A curated collection of projects spanning music videos, commercials, and documentary films.
+        </p>
+      </div>
+
+      <div class="projects-grid stagger-children">
+        <div class="project-card reveal" data-frame="FR 001" id="project-1">
+          <img src="images/project-1.png" alt="Neon Nights — music video project" loading="lazy" />
+          <div class="project-overlay">
+            <div class="project-category">Music Video</div>
+            <div class="project-title">Neon Nights</div>
+            <div class="project-year">2024</div>
+          </div>
+        </div>
+        <div class="project-card reveal" data-frame="FR 002" id="project-2">
+          <img src="images/project-2.png" alt="Desert Gold — documentary project" loading="lazy" />
+          <div class="project-overlay">
+            <div class="project-category">Documentary</div>
+            <div class="project-title">Desert Gold</div>
+            <div class="project-year">2024</div>
+          </div>
+        </div>
+        <div class="project-card reveal" data-frame="FR 003" id="project-3">
+          <img src="images/project-3.png" alt="Noir Couture — fashion film project" loading="lazy" />
+          <div class="project-overlay">
+            <div class="project-category">Fashion Film</div>
+            <div class="project-title">Noir Couture</div>
+            <div class="project-year">2024</div>
+          </div>
+        </div>
+        <div class="project-card reveal" data-frame="FR 004" id="project-4">
+          <img src="images/project-4.png" alt="Unstoppable — sports commercial project" loading="lazy" />
+          <div class="project-overlay">
+            <div class="project-category">Commercial</div>
+            <div class="project-title">Unstoppable</div>
+            <div class="project-year">2023</div>
+          </div>
+        </div>
+        <div class="project-card reveal" data-frame="FR 005" id="project-5">
+          <img src="images/project-5.png" alt="The Art of Taste — food commercial project" loading="lazy" />
+          <div class="project-overlay">
+            <div class="project-category">Brand Film</div>
+            <div class="project-title">The Art of Taste</div>
+            <div class="project-year">2023</div>
+          </div>
+        </div>
+        <div class="project-card reveal" data-frame="FR 006" id="project-6">
+          <img src="images/project-6.png" alt="Golden Hour — wedding film project" loading="lazy" />
+          <div class="project-overlay">
+            <div class="project-category">Wedding Film</div>
+            <div class="project-title">Golden Hour</div>
+            <div class="project-year">2023</div>
+          </div>
+        </div>
+      </div>
+    </div>
+  </section>
+
+  <!-- ======== MARQUEE 2 ======== -->
+  <div class="marquee" aria-hidden="true">
+    <div class="marquee-inner" style="animation-direction: reverse;">
+      <span>Adobe Premiere<span class="sep">✦</span></span>
+      <span>DaVinci Resolve<span class="sep">✦</span></span>
+      <span>After Effects<span class="sep">✦</span></span>
+      <span>Cinema 4D<span class="sep">✦</span></span>
+      <span>Pro Tools<span class="sep">✦</span></span>
+      <span>Final Cut Pro<span class="sep">✦</span></span>
+      <span>RED Cameras<span class="sep">✦</span></span>
+      <span>ARRI Alexa<span class="sep">✦</span></span>
+      <!-- Duplicated for seamless loop -->
+      <span>Adobe Premiere<span class="sep">✦</span></span>
+      <span>DaVinci Resolve<span class="sep">✦</span></span>
+      <span>After Effects<span class="sep">✦</span></span>
+      <span>Cinema 4D<span class="sep">✦</span></span>
+      <span>Pro Tools<span class="sep">✦</span></span>
+      <span>Final Cut Pro<span class="sep">✦</span></span>
+      <span>RED Cameras<span class="sep">✦</span></span>
+      <span>ARRI Alexa<span class="sep">✦</span></span>
+    </div>
+  </div>
+
+  <!-- ======== SERVICES ======== -->
+  <section class="services" id="services">
+    <div class="container">
+      <div class="section-header">
+        <div>
+          <div class="section-label reveal-left">What I Do</div>
+          <h2 class="section-title reveal-left">Services</h2>
+        </div>
+      </div>
+
+      <div class="services-grid stagger-children">
+        <div class="service-card reveal" id="service-editing">
+          <div class="service-number">01</div>
+          <h3 class="service-title">Video Editing</h3>
+          <p class="service-desc">
+            Precision cutting with rhythmic pacing. Transforming hours of raw footage into
+            tight, compelling narratives that hold attention.
+          </p>
+        </div>
+        <div class="service-card reveal" id="service-color">
+          <div class="service-number">02</div>
+          <h3 class="service-title">Color Grading</h3>
+          <p class="service-desc">
+            Cinematic color science to establish mood and visual identity. From film emulation
+            to modern looks using DaVinci Resolve.
+          </p>
+        </div>
+        <div class="service-card reveal" id="service-motion">
+          <div class="service-number">03</div>
+          <h3 class="service-title">Motion Graphics</h3>
+          <p class="service-desc">
+            Dynamic titles, lower thirds, and animated elements that elevate production value
+            and reinforce brand storytelling.
+          </p>
+        </div>
+        <div class="service-card reveal" id="service-sound">
+          <div class="service-number">04</div>
+          <h3 class="service-title">Sound Design</h3>
+          <p class="service-desc">
+            Atmospheric soundscapes, foley, and audio mixing that complete the cinematic
+            experience and amplify emotional impact.
+          </p>
+        </div>
+      </div>
+    </div>
+  </section>
+
+  <!-- Film Strip Divider -->
+  <div class="container">
+    <div class="film-divider" aria-hidden="true">
+      <div class="hole"></div>
+      <div class="hole"></div>
+      <div class="hole"></div>
+      <div class="strip"></div>
+      <div class="hole"></div>
+      <div class="hole"></div>
+      <div class="hole"></div>
+      <div class="strip"></div>
+      <div class="hole"></div>
+      <div class="hole"></div>
+      <div class="hole"></div>
+      <div class="strip"></div>
+      <div class="hole"></div>
+      <div class="hole"></div>
+      <div class="hole"></div>
+      <div class="strip"></div>
+      <div class="hole"></div>
+      <div class="hole"></div>
+      <div class="hole"></div>
+    </div>
+  </div>
+
+  <!-- ======== SHOWREEL ======== -->
+  <section class="reel" id="reel">
+    <div class="container">
+      <div class="section-header" style="justify-content: center; text-align: center;">
+        <div>
+          <div class="section-label reveal" style="justify-content: center;">Showreel 2024</div>
+          <h2 class="section-title reveal">Watch the Reel</h2>
+        </div>
+      </div>
+
+      <div class="reel-wrapper reveal-scale">
+        <div class="reel-frame" id="reel-player">
+          <img src="images/project-1.png" alt="Showreel 2024 thumbnail" loading="lazy" />
+          <div class="reel-play">
+            <div class="reel-play-btn">
+              <div class="triangle"></div>
+            </div>
+            <div class="reel-play-label">Play Showreel</div>
+          </div>
+        </div>
+      </div>
+    </div>
+  </section>
+
+  <!-- ======== CONTACT ======== -->
+  <section class="contact" id="contact">
+    <div class="container">
+      <div class="section-label reveal" style="justify-content: center; margin-bottom: 20px;">Let's Work Together</div>
+      <h2 class="contact-heading reveal">
+        GOT A<br /><span class="highlight">PROJECT?</span>
+      </h2>
+      <p class="contact-text reveal">
+        I'm always open to discussing new projects, creative ideas, and opportunities
+        to bring your vision to life through film and motion.
+      </p>
+      <a href="mailto:hello@johnelmer.com" class="contact-email reveal" id="contact-email">
+        hello@johnelmer.com
+      </a>
+      <div class="contact-socials reveal">
+        <a href="#" id="social-youtube">YouTube</a>
+        <a href="#" id="social-linkedin">LinkedIn</a>
+      </div>
+    </div>
+  </section>
+
+  <!-- ======== FOOTER ======== -->
+  <footer class="footer">
+    <div class="container">
+      <div class="footer-text">© 2026 John Elmer. All rights reserved.</div>
+      <div class="footer-badge">Shot on Film</div>
+    </div>
+  </footer>
+
+  <script src="script.js"></script>
+</body>
+
+</html>
